@@ -45,6 +45,7 @@ docker run --name jenkins-blueocean --restart=on-failure --detach \
 ```
 docker run --name jenkins-local -d -p 8080:8080 -p 50000:50000 ^
   -v jenkins_home:/var/jenkins_home ^
+  --network jenkins ^
   -v /var/run/docker.sock:/var/run/docker.sock myjenkins:2.452.2
 
 
