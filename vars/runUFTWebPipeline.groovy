@@ -4,7 +4,7 @@ def call()
     {
         agent{label 'EC2Instance'}
         stages{
-            stage(Install Chrome')
+            stage('Install Chrome')
                   {
                       steps{installChrome()}
                   }
