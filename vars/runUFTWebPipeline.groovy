@@ -2,7 +2,7 @@ def call()
 {
     pipeline
     {
-        agent{label 'Built-In Node'}
+        agent{label 'EC2Instance'}
         stages{
             stage('Install Chrome')
                   {
